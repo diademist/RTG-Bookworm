@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\EBookshelf",
+    "\\EBookshelf\\booksite",
+    "\\EBookshelf\\booksite\\booksite",
+    "\\EBookshelf\\booksite\\booksite\\templates",
+    "\\EBookshelf\\booksite\\booksite\\templates\\registration",
+    "\\EBookshelf\\booksite\\booksite\\__pycache__"
+  ],
+  "SelectedNode": "\\EBookshelf\\booksite\\booksite\\settings.py",
+  "PreviewInSolutionExplorer": false
+}
