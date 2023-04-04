@@ -8,6 +8,6 @@
     "\\EBookshelf\\booksite\\booksite\\templates\\registration",
     "\\EBookshelf\\booksite\\booksite\\__pycache__"
   ],
-  "SelectedNode": "\\EBookshelf\\booksite\\booksite\\settings.py",
+  "SelectedNode": "\\EBookshelf\\booksite\\booksite\\templates\\registration\\login.html",
   "PreviewInSolutionExplorer": false
 }
