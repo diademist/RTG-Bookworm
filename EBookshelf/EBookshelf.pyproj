@@ -11,6 +11,7 @@
     <OutputPath>.</OutputPath>
     <Name>EBookshelf</Name>
     <RootNamespace>EBookshelf</RootNamespace>
+    <SuppressEnvironmentCreationPrompt>True</SuppressEnvironmentCreationPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,6 +26,11 @@
     <Folder Include="booksite\booksite\" />
     <Folder Include="booksite\polls\" />
     <Folder Include="booksite\polls\migrations\" />
+    <Folder Include="booksite\user\" />
+    <Folder Include="booksite\user\migrations\" />
+    <Folder Include="booksite\user\templates\" />
+    <Folder Include="booksite\user\Templates\user\" />
+    <Folder Include="booksite\user\Templates\registration\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="booksite\booksite\asgi.py" />
@@ -42,6 +48,25 @@
     <Compile Include="booksite\polls\views.py" />
     <Compile Include="booksite\polls\__init__.py" />
     <Compile Include="booksite\server.py" />
+    <Compile Include="booksite\user\admin.py" />
+    <Compile Include="booksite\user\apps.py" />
+    <Compile Include="booksite\user\migrations\__init__.py" />
+    <Compile Include="booksite\user\models.py" />
+    <Compile Include="booksite\user\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="booksite\user\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="booksite\user\tests.py" />
+    <Compile Include="booksite\user\views.py" />
+    <Compile Include="booksite\user\__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="booksite\user\templates\base.html" />
+    <Content Include="booksite\user\Templates\registration\login.html" />
+    <Content Include="booksite\user\Templates\user\dashboard.html" />
+    <Content Include="booksite\user\Templates\user\register.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
