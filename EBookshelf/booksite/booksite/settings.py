@@ -31,13 +31,13 @@ ALLOWED_HOSTS = ['bukwrm.onrender.com', '127.0.0.1', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
-    'user',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'user'
 ]
 
 MIDDLEWARE = [
@@ -113,10 +113,25 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
     {
+        'NAME': 'user.validators.MaximumLengthValidator',
+        'OPTIONS': {
+            'max_length': 15,   
+    }
+    },
+    {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    },
+    {
+        'NAME': 'user.validators.NumberValidator',
+    },
+    {
+        'NAME': 'user.validators.UppercaseValidator',
+    },
+    {
+        'NAME': 'user.validators.SymbolValidator',
     },
 ]
 

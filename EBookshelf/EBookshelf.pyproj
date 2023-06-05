@@ -59,6 +59,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="booksite\user\tests.py" />
+    <Compile Include="booksite\user\validators.py" />
     <Compile Include="booksite\user\views.py" />
     <Compile Include="booksite\user\__init__.py" />
   </ItemGroup>
@@ -67,6 +68,7 @@
     <Content Include="booksite\user\Templates\registration\login.html" />
     <Content Include="booksite\user\Templates\user\dashboard.html" />
     <Content Include="booksite\user\Templates\user\register.html" />
+    <Content Include="booksite\user\templates\user\bookform.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

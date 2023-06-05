@@ -5,6 +5,8 @@ Hello, {{ user.username|default:'Guest' }}!
 
 <div>
     {% if user.is_authenticated %}
+    <a href="{% url 'bookform' %}">Manage books</a>
+    <br>
     <a href="{% url 'logout' %}">Logout</a>
     {% else %}
     <a href="{% url 'login' %}">Login</a>

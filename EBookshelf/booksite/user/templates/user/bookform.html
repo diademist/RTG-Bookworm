@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+<p>{{ user.username|default:'Guest' }}, feel free to manage your shelf!</p>
+
+<div style="width: 25%; height: 40%; float: left">
+    <h2>Add book</h2>
+    <form method="post" autocomplete="off">
+        {% csrf_token %}
+        {{form}}
+        <br />
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<div style="width: 75%; height:40%; float:left">
+    <h2>Your books</h2>
+    <ul>
+        {% for book in all_books %}
+        <li><a href="{% url 'delete_book' book.id %}">[delete]</a>  {{ book.bookname }} (by {{book.author}})</li>
+        {% empty %}
+        <li>Shelf is empty :(</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<p><a href="{% url 'dashboard' %}">Back to dashboard</a></p>
+{% else %}
+<p>You have to login in order to access this page</p>
+<p><a href="{% url 'login' %}">Login</a></p>
+    {% endif %}
+    {% endblock %}

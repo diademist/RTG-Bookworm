@@ -3,7 +3,13 @@
 {% block content %}
 <h2>Register</h2>
 
-<form method="post">
+<p>Password requirements:<br>
+Username length 25<br>
+Password has to contain 8 symbols<br>
+E-mail format should be example@example.mail
+</p>
+
+<form method="post" autocomplete="off">
     {% csrf_token %}
     {{form}}
     <input type="submit" value="Register">
