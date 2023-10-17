@@ -80,23 +80,13 @@ WSGI_APPLICATION = 'booksite.wsgi.application'
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
 #}
-
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.mysql',
-#        'NAME': 'diademisteu$RTG_EBOOK',
-#        'USER': 'diademisteu',
-#        'PASSWORD': 'KjM4Xb.DU@QAnX5',
-#        'HOST': 'diademist.mysql.pythonanywhere-services.com',
-#    }
-#}
   
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
        'NAME': 'bookworms_7896',
        'USER': 'rtg_backend',
-       'PASSWORD': 'LaEwlLBTDcePGbaNVNor3Uthfwu128Pp',
+       'PASSWORD': '',
        'HOST': 'frankfurt-postgres.render.com',
        'PORT': '5432',
    }
